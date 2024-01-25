@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_dynamic_icon/flutter_dynamic_icon.dart';
+// import 'package:flutter_dynamic_icon/flutter_dynamic_icon.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -14,7 +14,7 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPageState extends State<SettingsPage> {
-  String? iconName;
+  // String? iconName;
   bool isIPhone = false;
 
   Future<void> _initPlatformState() async {
@@ -29,17 +29,17 @@ class _SettingsPageState extends State<SettingsPage> {
   void initState() {
     super.initState();
     _initPlatformState();
-    _pc();
+    // _pc();
   }
 
-  void _pc() async {
-    if (await FlutterDynamicIcon.supportsAlternateIcons) {
-      final name = await FlutterDynamicIcon.getAlternateIconName();
-      setState(() {
-        iconName = name ?? Icon.values.first.name;
-      });
-    }
-  }
+  // void _pc() async {
+  //   if (await FlutterDynamicIcon.supportsAlternateIcons) {
+  //     final name = await FlutterDynamicIcon.getAlternateIconName();
+  //     setState(() {
+  //       iconName = name ?? Icon.values.first.name;
+  //     });
+  //   }
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -112,66 +112,66 @@ class _SettingsPageState extends State<SettingsPage> {
                       ],
                     ),
                   ),
-                  if (isIPhone)
-                    Expanded(
-                      flex: 4,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text('App icon'),
-                              const SizedBox(height: 8),
-                              Wrap(
-                                spacing: 8,
-                                runSpacing: 8,
-                                children: Icon.values
-                                    .map(
-                                      (e) => GestureDetector(
-                                        onTap: () async {
-                                          try {
-                                            if (await FlutterDynamicIcon
-                                                .supportsAlternateIcons) {
-                                              await FlutterDynamicIcon
-                                                  .setAlternateIconName(e.name);
-                                              setState(() {
-                                                iconName = e.name;
-                                              });
-                                            }
-                                          } catch (_) {}
-                                        },
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                            borderRadius:
-                                                BorderRadius.circular(16),
-                                            color: iconName == e.name
-                                                ? const Color(0xFF3FA60D)
-                                                : null,
-                                          ),
-                                          padding: const EdgeInsets.all(4),
-                                          child: ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(12),
-                                            child: Image.asset(
-                                              e.asset,
-                                              width: 50,
-                                              height: 50,
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    )
-                                    .toList(),
-                              ),
-                            ],
-                          ),
-                        ],
-                      ),
-                    ),
-                  const Spacer(flex: 2),
+                  // if (isIPhone)
+                  //   Expanded(
+                  //     flex: 4,
+                  //     child: Column(
+                  //       crossAxisAlignment: CrossAxisAlignment.start,
+                  //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  //       children: [
+                  //         Column(
+                  //           crossAxisAlignment: CrossAxisAlignment.start,
+                  //           children: [
+                  //             Text('App icon'),
+                  //             const SizedBox(height: 8),
+                  //             Wrap(
+                  //               spacing: 8,
+                  //               runSpacing: 8,
+                  //               children: Icon.values
+                  //                   .map(
+                  //                     (e) => GestureDetector(
+                  //                       onTap: () async {
+                  //                         try {
+                  //                           if (await FlutterDynamicIcon
+                  //                               .supportsAlternateIcons) {
+                  //                             await FlutterDynamicIcon
+                  //                                 .setAlternateIconName(e.name);
+                  //                             setState(() {
+                  //                               iconName = e.name;
+                  //                             });
+                  //                           }
+                  //                         } catch (_) {}
+                  //                       },
+                  //                       child: Container(
+                  //                         decoration: BoxDecoration(
+                  //                           borderRadius:
+                  //                               BorderRadius.circular(16),
+                  //                           color: iconName == e.name
+                  //                               ? const Color(0xFF3FA60D)
+                  //                               : null,
+                  //                         ),
+                  //                         padding: const EdgeInsets.all(4),
+                  //                         child: ClipRRect(
+                  //                           borderRadius:
+                  //                               BorderRadius.circular(12),
+                  //                           child: Image.asset(
+                  //                             e.asset,
+                  //                             width: 50,
+                  //                             height: 50,
+                  //                             fit: BoxFit.cover,
+                  //                           ),
+                  //                         ),
+                  //                       ),
+                  //                     ),
+                  //                   )
+                  //                   .toList(),
+                  //             ),
+                  //           ],
+                  //         ),
+                  //       ],
+                  //     ),
+                  //   ),
+                  // const Spacer(flex: 2),
                 ],
               ),
             ),
@@ -182,19 +182,19 @@ class _SettingsPageState extends State<SettingsPage> {
   }
 }
 
-enum Icon {
-  iconDefault('assets/icons/icon_default.png', 'icon_default'),
-  icon1('assets/icons/icon1.png', 'icon1'),
-  icon2('assets/icons/icon2.png', 'icon2'),
-  icon3('assets/icons/icon3.png', 'icon3'),
-  icon4('assets/icons/icon4.png', 'icon4'),
-  icon5('assets/icons/icon5.png', 'icon5');
+// enum Icon {
+//   iconDefault('assets/icons/icon_default.png', 'icon_default'),
+//   icon1('assets/icons/icon1.png', 'icon1'),
+//   icon2('assets/icons/icon2.png', 'icon2'),
+//   icon3('assets/icons/icon3.png', 'icon3'),
+//   icon4('assets/icons/icon4.png', 'icon4'),
+//   icon5('assets/icons/icon5.png', 'icon5');
 
-  const Icon(this.asset, this.name);
+//   const Icon(this.asset, this.name);
 
-  final String asset;
-  final String name;
-}
+//   final String asset;
+//   final String name;
+// }
 
 class Jumeira extends StatefulWidget {
   const Jumeira({super.key, required this.jumera});

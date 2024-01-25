@@ -51,8 +51,6 @@ PODS:
     - "GoogleUtilities/NSData+zlib (~> 7.8)"
   - FirebaseSharedSwift (10.19.0)
   - Flutter (1.0.0)
-  - flutter_dynamic_icon (0.0.1):
-    - Flutter
   - flutter_inappwebview (0.0.1):
     - Flutter
     - flutter_inappwebview/Core (= 0.0.1)
@@ -109,7 +107,6 @@ DEPENDENCIES:
   - firebase_messaging (from `.symlinks/plugins/firebase_messaging/ios`)
   - firebase_remote_config (from `.symlinks/plugins/firebase_remote_config/ios`)
   - Flutter (from `Flutter`)
-  - flutter_dynamic_icon (from `.symlinks/plugins/flutter_dynamic_icon/ios`)
   - flutter_inappwebview (from `.symlinks/plugins/flutter_inappwebview/ios`)
   - flutter_local_notifications (from `.symlinks/plugins/flutter_local_notifications/ios`)
   - in_app_review (from `.symlinks/plugins/in_app_review/ios`)
@@ -145,8 +142,6 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/firebase_remote_config/ios"
   Flutter:
     :path: Flutter
-  flutter_dynamic_icon:
-    :path: ".symlinks/plugins/flutter_dynamic_icon/ios"
   flutter_inappwebview:
     :path: ".symlinks/plugins/flutter_inappwebview/ios"
   flutter_local_notifications:
@@ -176,7 +171,6 @@ SPEC CHECKSUMS:
   FirebaseRemoteConfig: bbd42790a4e84fde6aab7eae810b608e7b5c0bf6
   FirebaseSharedSwift: f34eeb7d3ea87a34497629b6ca41657beadef76a
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  flutter_dynamic_icon: fb0cd2f84c817c1a0ddbbc383fbebec3cd5e88d8
   flutter_inappwebview: 3d32228f1304635e7c028b0d4252937730bbc6cf
   flutter_local_notifications: 0c0b1ae97e741e1521e4c1629a459d04b9aec743
   GoogleDataTransport: 57c22343ab29bc686febbf7cbb13bad167c2d8fe
