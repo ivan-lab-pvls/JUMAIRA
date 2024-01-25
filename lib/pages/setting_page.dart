@@ -21,7 +21,7 @@ class _SettingsPageState extends State<SettingsPage> {
     DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
     IosDeviceInfo iosInfo = await deviceInfo.iosInfo;
     setState(() {
-      isIPhone = iosInfo.model!.toLowerCase().contains('iphone');
+      isIPhone = iosInfo.model.toLowerCase().contains('iphone');
     });
   }
 
