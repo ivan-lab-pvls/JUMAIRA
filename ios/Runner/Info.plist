@@ -70,7 +70,7 @@
 			<dict>
 				<key>CFBundleIconFiles</key>
 				<array>
-					<string>default</string>
+					<string>AppIcons/default</string>
 				</array>
 				<key>UIPrerenderedIcon</key>
 				<false/>
