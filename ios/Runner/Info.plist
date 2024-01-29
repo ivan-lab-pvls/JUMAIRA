@@ -52,5 +52,175 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>CFBundleIcons</key>
+	<dict>
+		<!-- Default app icon -->
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>black</string>
+			</array>
+			<key>UIPrerenderedIcon</key>
+			<false/>
+		</dict>
+
+		<key>CFBundleAlternateIcons</key>
+		<dict>
+			<!-- custom icon - default -->
+			<key>default</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>default</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+
+			<!-- custom icon - icon1 -->
+			<key>icon1</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>icon1</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+
+			<!-- custom icon - icon2 -->
+			<key>icon2</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>icon2</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+
+			<!-- custom icon - icon3 -->
+			<key>icon3</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>icon3</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+
+			<!-- custom icon - icon4 -->
+			<key>icon4</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>icon4</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+
+			<!-- custom icon - icon5 -->
+			<key>icon5</key>
+			<dict>
+				<key>CFBundleIconFiles</key>
+				<array>
+					<string>icon5</string>
+				</array>
+				<key>UIPrerenderedIcon</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+
+	<!-- iPad Icons -->
+    <key>CFBundleIcons~ipad</key>
+    <dict>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconFiles</key>
+            <array>
+                <string>black</string>
+            </array>
+            <key>UIPrerenderedIcon</key>
+            <false/>
+        </dict>
+        <key>CFBundleAlternateIcons</key>
+        <dict>
+            <!-- custom icon - default -->
+            <key>default</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>defaultIpadPro</string>
+                    <string>defaultIpad</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+            
+            <!-- custom icon - icon1 -->
+            <key>icon1</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>icon1IpadPro</string>
+                    <string>icon1Ipad</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+            
+             <!-- custom icon - icon2 -->
+            <key>icon2</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>icon2IpadPro</string>
+                    <string>icon2Ipad</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+
+			 <!-- custom icon - icon3 -->
+            <key>icon3</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>icon3IpadPro</string>
+                    <string>icon3Ipad</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+
+			 <!-- custom icon - icon4 -->
+            <key>icon4</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>icon4IpadPro</string>
+                    <string>icon4Ipad</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+
+			 <!-- custom icon - icon5 -->
+            <key>icon5</key>
+            <dict>
+                <key>CFBundleIconFiles</key>
+                <array>
+                    <string>icon5IpadPro</string>
+                    <string>icon5Ipad</string>
+                </array>
+                <key>UIPrerenderedIcon</key>
+                <false/>
+            </dict>
+        </dict>
+    </dict>
 </dict>
 </plist>
