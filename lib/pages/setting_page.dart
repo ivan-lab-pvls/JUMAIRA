@@ -110,64 +110,65 @@ class _SettingsPageState extends State<SettingsPage> {
                       ],
                     ),
                   ),
-                  Expanded(
-                    flex: 4,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text('App icon'),
-                            const SizedBox(height: 8),
-                            Wrap(
-                              spacing: 8,
-                              runSpacing: 8,
-                              children: Icon.values
-                                  .map(
-                                    (e) => GestureDetector(
-                                      onTap: () async {
-                                        try {
-                                          if (await FlutterDynamicIcon
-                                              .supportsAlternateIcons) {
-                                            await FlutterDynamicIcon
-                                                .setAlternateIconName(e.name);
-                                            setState(() {
-                                              iconName = e.name;
-                                            });
-                                          }
-                                        } catch (_) {}
-                                      },
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(16),
-                                          color: iconName == e.name
-                                              ? const Color(0xFF3FA60D)
-                                              : null,
-                                        ),
-                                        padding: const EdgeInsets.all(4),
-                                        child: ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(12),
-                                          child: Image.asset(
-                                            e.asset,
-                                            width: 50,
-                                            height: 50,
-                                            fit: BoxFit.cover,
+                  if (isIPhone)
+                    Expanded(
+                      flex: 4,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('App icon'),
+                              const SizedBox(height: 8),
+                              Wrap(
+                                spacing: 8,
+                                runSpacing: 8,
+                                children: Icon.values
+                                    .map(
+                                      (e) => GestureDetector(
+                                        onTap: () async {
+                                          try {
+                                            if (await FlutterDynamicIcon
+                                                .supportsAlternateIcons) {
+                                              await FlutterDynamicIcon
+                                                  .setAlternateIconName(e.name);
+                                              setState(() {
+                                                iconName = e.name;
+                                              });
+                                            }
+                                          } catch (_) {}
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                            borderRadius:
+                                                BorderRadius.circular(16),
+                                            color: iconName == e.name
+                                                ? const Color(0xFF3FA60D)
+                                                : null,
+                                          ),
+                                          padding: const EdgeInsets.all(4),
+                                          child: ClipRRect(
+                                            borderRadius:
+                                                BorderRadius.circular(12),
+                                            child: Image.asset(
+                                              e.asset,
+                                              width: 50,
+                                              height: 50,
+                                              fit: BoxFit.cover,
+                                            ),
                                           ),
                                         ),
                                       ),
-                                    ),
-                                  )
-                                  .toList(),
-                            ),
-                          ],
-                        ),
-                      ],
+                                    )
+                                    .toList(),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
                   const Spacer(flex: 2),
                 ],
               ),
